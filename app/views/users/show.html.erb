@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<h2> Here are your details</h2>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.Name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @user.Email %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @user.Gender %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @user.About %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @user.image_url %>
+</p>
+
+<p>If you would like to change some details,click <%= link_to 'here', edit_user_path(@user) %></p>
+<p>Click <a href="http://localhost:3000/dashboard/view">here</a> to visit everyone else</p>
+
+
+

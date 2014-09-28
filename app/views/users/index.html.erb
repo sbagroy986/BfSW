@@ -2,17 +2,6 @@
 <p>Click <%= link_to 'here', new_user_path %> to create your own profile. </p>
 <p>Click <a href="http://localhost:3000/dashboard/view">here</a> to visit everyone else.</p>
 
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.Name %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<p> For managing profiles, click <%= link_to 'here', manage_mchange_path %></p>
 
 <br>

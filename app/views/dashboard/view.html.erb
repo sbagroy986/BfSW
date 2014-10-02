@@ -2,11 +2,11 @@
 <p>You could even send them an email saying 'Hi'!</p>
 <% @users.each do |user| %>
 	<ul>
-		<li><%= user.Name %><br>
+		<li><%= user.name %><br>
 		<%= user.Gender %><br>
 		<%= user.Email %><br>
-		<p>About <%= user.Name %> : <%= user.About %><br>
-		<%= image_tag(user.image_url ) %></li>
+		<p>About <%= user.name %> : <%= user.About %><br>
+		</li>
 
 	</ul>
 <% end %>

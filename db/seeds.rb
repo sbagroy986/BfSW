@@ -1,4 +1,4 @@
-User.create!(Name: 'Shaktimaan',
+User.create!(name: 'Shaktimaan',
 About:
 %{
 Do you even lift bro?

@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
+  skip_before_action :authorize, only: [:new,:create,:index]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+
   # GET /users
   # GET /users.json
   def index
@@ -27,7 +29,6 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        Mailx.signup(@user).deliver
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
@@ -69,6 +70,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:Name, :string, :Email, :Gender, :About, :image_url)
+      params.require(:user).permit(:name, :Email, :About, :Gender, :password, :password_confirmation)
     end
 end

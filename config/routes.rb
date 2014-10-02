@@ -1,8 +1,17 @@
 BfSW::Application.routes.draw do
-  get "mchange/manage"
-  get "dashboard/view"
   resources :users
 
+  get 'admin' => 'admin#index'
+  controller :sessions do
+    delete 'logout' => :destroy
+    get  'login' => :new
+    post 'login' => :create
+  end
+
+  get "sessions/create"
+  get "sessions/destroy"  
+  get "mchange/manage"
+  get "dashboard/view"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

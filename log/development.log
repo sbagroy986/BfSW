@@ -13296,3 +13296,3123 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 13:57:21 +0530
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 13:57:21 +0530
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "name"=>"Shreyy", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'Shreyy' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 72ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:18:57 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:19:04 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 75ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:08 +0530
+
+
+Started GET "/dashboard/view" for 127.0.0.1 at 2014-10-02 14:21:17 +0530
+Processing by DashboardController#view as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".name ASC[0m
+  Rendered dashboard/view.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 5.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-10-02 14:21:19 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:21:57 +0530
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "name"=>"Shreyy", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'Shreyy' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 70ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:04 +0530
+
+
+Started GET "/dashboard/view" for 127.0.0.1 at 2014-10-02 14:22:07 +0530
+Processing by DashboardController#view as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".name ASC[0m
+  Rendered dashboard/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:09 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 14:22:38 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:39 +0530
+
+
+Started GET "/dashboard/view" for 127.0.0.1 at 2014-10-02 14:22:42 +0530
+Processing by DashboardController#view as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 14:22:42 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "name"=>"Shreyy", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'Shreyy' LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 74ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:22:47 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 14:23:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 79ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:09 +0530
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:11 +0530
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-02 14:23:16 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "name"=>"Shreyy", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'Shreyy' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 94ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:16 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:17 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered admin/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:33 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered admin/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered admin/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:34 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:44 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:45 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:23:46 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:04 +0530
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 67ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:15 +0530
+
+
+Started GET "/dashboard/view" for 127.0.0.1 at 2014-10-02 14:24:19 +0530
+Processing by DashboardController#view as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 25ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 14:24:19 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-02 14:24:23 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "name"=>"Shreyy", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'Shreyy' LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 77ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered admin/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 14:24:24 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:23:40 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 280ms (Views: 241.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:41 +0530
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:23:46 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:23:47 +0530
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-10-02 17:23:49 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (99.5ms)
+  Rendered users/new.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 121ms (Views: 119.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:24:38 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 72ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:39 +0530
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-10-02 17:24:40 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (45.1ms)
+  Rendered users/new.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "user"=>{"name"=>"Sanjay", "Email"=>"bagroy64@gmail.com", "About"=>"", "Gender"=>"Male", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (68.2ms)[0m  [1mINSERT INTO "users" ("About", "Email", "Gender", "created_at", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["About", ""], ["Email", "bagroy64@gmail.com"], ["Gender", "Male"], ["created_at", Thu, 02 Oct 2014 11:54:54 UTC +00:00], ["name", "Sanjay"], ["password_digest", "$2a$10$eYKUrES81xTNO4y.yABiCeGyJRdeYb1Q8eTiW5lZTjzdEdCwFn9lO"], ["updated_at", Thu, 02 Oct 2014 11:54:54 UTC +00:00]]
+  [1m[35m (106.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 244ms (ActiveRecord: 174.5ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:24:54 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:25:00 +0530
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-10-02 17:27:11 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (25.6ms)
+  Rendered users/new.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "user"=>{"name"=>"Shrey", "Email"=>"sbagroy@hotmail.com", "About"=>"", "Gender"=>"Shrey", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("About", "Email", "Gender", "created_at", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["About", ""], ["Email", "sbagroy@hotmail.com"], ["Gender", "Shrey"], ["created_at", Thu, 02 Oct 2014 11:57:24 UTC +00:00], ["name", "Shrey"], ["password_digest", "$2a$10$5h.krcwTRjqEgwkJUv1oT.IO0onix2ZAscJJqm02AeBWDp.cisTU2"], ["updated_at", Thu, 02 Oct 2014 11:57:24 UTC +00:00]]
+  [1m[35m (98.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 171ms (ActiveRecord: 98.8ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:24 +0530
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-02 17:27:28 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "name"=>"Shrey", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'Shrey' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 65ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:27:29 +0530
+
+
+Started GET "/mchange" for 127.0.0.1 at 2014-10-02 17:28:06 +0530
+Processing by MchangeController#manage as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".name ASC[0m
+  Rendered mchange/manage.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard/view" for 127.0.0.1 at 2014-10-02 17:28:10 +0530
+Processing by DashboardController#view as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".name ASC[0m
+  Rendered dashboard/view.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:28:20 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:25 +0530
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:28 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:28:31 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:31:30 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 83ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:31 +0530
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-10-02 17:31:33 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (33.6ms)
+  Rendered users/new.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "user"=>{"name"=>"shreyyyy", "Email"=>"sbagroy@hotmail.com", "About"=>"", "Gender"=>"Shrey", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "users" ("About", "Email", "Gender", "created_at", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["About", ""], ["Email", "sbagroy@hotmail.com"], ["Gender", "Shrey"], ["created_at", Thu, 02 Oct 2014 12:01:45 UTC +00:00], ["name", "shreyyyy"], ["password_digest", "$2a$10$lkaX7PRAp5Tbjgns2rMpHubSucy85MpGWi/tvO5uK3b043bf.GjQy"], ["updated_at", Thu, 02 Oct 2014 12:01:45 UTC +00:00]]
+  [1m[35m (101.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 171ms (ActiveRecord: 104.8ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:31:45 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 73ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:31 +0530
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-10-02 17:33:32 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (34.8ms)
+  Rendered users/new.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-10-02 17:33:44 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "user"=>{"name"=>"shrey3", "Email"=>"sbagroy@hotmail.com", "About"=>"", "Gender"=>"Shrey", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (18.3ms)[0m  [1mINSERT INTO "users" ("About", "Email", "Gender", "created_at", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["About", ""], ["Email", "sbagroy@hotmail.com"], ["Gender", "Shrey"], ["created_at", Thu, 02 Oct 2014 12:03:44 UTC +00:00], ["name", "shrey3"], ["password_digest", "$2a$10$XSAr3wE7WFazooCYhEoM0.VXKKkrQbqQskPfiOJuLDdAyv74gUgKK"], ["updated_at", Thu, 02 Oct 2014 12:03:44 UTC +00:00]]
+  [1m[35m (126.7ms)[0m  commit transaction
+  Rendered mailx/signup.text.erb (0.3ms)
+
+Sent mail to sbagroy@hotmail.com (4873.8ms)
+Date: Thu, 02 Oct 2014 17:33:45 +0530
+From: Shrey Bagroy <shrey14099@iiitd.ac.in>
+To: sbagroy@hotmail.com
+Message-ID: <542d3f211b313_103d3f91d451321832362@shrey-HP-ENVY-15-Notebook-PC.mail>
+Subject: Made a profile on BfSW
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+Hello shrey3.
+
+Thank you for making a profile on BfSW. Really appreciate you fro trying this out.
+Respect+=1
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 5473ms (ActiveRecord: 145.1ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-10-02 17:33:49 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:33:50 +0530
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "name"=>"shrey3", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'shrey3' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 63ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1[0m
+  Rendered admin/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:02 +0530
+
+
+Started GET "/mchange" for 127.0.0.1 at 2014-10-02 17:34:04 +0530
+Processing by MchangeController#manage as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".name ASC[0m
+  Rendered mchange/manage.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "id"=>"3"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (95.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 129ms (ActiveRecord: 96.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:06 +0530
+
+
+Started GET "/mchange" for 127.0.0.1 at 2014-10-02 17:34:07 +0530
+Processing by MchangeController#manage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY "users".name ASC
+  Rendered mchange/manage.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/4" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 4]]
+  [1m[36m (105.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 109ms (ActiveRecord: 105.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:10 +0530
+
+
+Started GET "/mchange" for 127.0.0.1 at 2014-10-02 17:34:11 +0530
+Processing by MchangeController#manage as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users".name ASC[0m
+  Rendered mchange/manage.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (129.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 132ms (ActiveRecord: 129.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:13 +0530
+
+
+Started GET "/mchange" for 127.0.0.1 at 2014-10-02 17:34:14 +0530
+Processing by MchangeController#manage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY "users".name ASC
+  Rendered mchange/manage.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/6" for 127.0.0.1 at 2014-10-02 17:34:15 +0530
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 6]]
+  [1m[36m (100.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 102ms (ActiveRecord: 100.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:16 +0530
+
+
+Started GET "/mchange" for 127.0.0.1 at 2014-10-02 17:34:17 +0530
+Processing by MchangeController#manage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:34:17 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mchange" for 127.0.0.1 at 2014-10-02 17:34:21 +0530
+Processing by MchangeController#manage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 23ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:34:21 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-02 17:34:22 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI="}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:34:22 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:22 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:22 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:23 +0530
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-02 17:34:30 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtaESANox0hZfyLqjHoyW4uphUkTivBchjx+VeQ8cqI=", "name"=>"shrey3", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."name" = 'shrey3' LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-02 17:34:30 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:31 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:34:41 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/mchange.css?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/mchange.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-02 17:38:56 +0530

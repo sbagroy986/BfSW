@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BfSW</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<% if session[:user_id] %>
-  <%= link_to 'Logout', logout_path, method: :delete %>
-<% end %>
+  <head>
+    <title>BfSW</title>
+    <%= stylesheet_link_tag "application", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <div class="navbar navbar-inverse navbar-fixed-top" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">BfSW</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><% if session[:user_id] %>
+  <%= link_to 'HOME', view_dashboard_path %>
+  <% else %>
+  <%= link_to 'HOME', root_path %>
+<% end %></li>
+                     <li><%= link_to 'MANAGE USERS', manage_mchange_path %></a></li>
+                      <li>
+                      <% if session[:user_id] %>
+  <%= link_to 'LOGOUT', logout_path, method: :delete %>
+  <% else %>
+  <%= link_to 'LOGIN', login_path %>
+<% end %></a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+    
 
-<%= yield %>
-
-</body>
+    <div class="haha">
+      <%= yield %>
+    </div>
+  </body>
 </html>

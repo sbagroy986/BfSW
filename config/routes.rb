@@ -18,6 +18,7 @@ BfSW::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root :to => 'users#index'
   get 'mchange' => 'mchange#manage', :as => :manage_mchange
+  get 'dashboard' => 'dashboard#view', :as => :view_dashboard
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

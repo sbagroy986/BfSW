@@ -1,3 +1,3 @@
 <h3>Hello .Thank you for signing in at <%= Time.now %></h3>
-<p>Click <a href="http://localhost:3000/dashboard/view"> here</a> to visit everyone else. </p>
+<p>Click <%= link_to 'here', view_dashboard_path %> to visit everyone else. </p>
 <p>Click <%= link_to 'here', manage_mchange_path %> to manage users. </p>

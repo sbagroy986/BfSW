@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'sqlite3'
 
 # Use sqlite3 as the database for Active Record
 
@@ -44,11 +45,4 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
-
-group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
-end
-group :development do
-  gem 'sqlite3', '1.3.9'
-end
+gem 'devise'

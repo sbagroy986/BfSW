@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :authorize, only: [:new,:create,:index]
+  skip_before_action :authorize, only: [:new,:create,:show]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -26,13 +26,14 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
+
     respond_to do |format|
       if @user.save
-        #Mailx.signup(@user).deliver
+        session[:user_id] = @user.id
         format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @user }
+        format.json { render :show, status: :created, location: @user }
       else
-        format.html { render action: 'new' }
+        format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -44,9 +45,9 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { head :no_content }
+        format.json { render :show, status: :ok, location: @user }
       else
-        format.html { render action: 'edit' }
+        format.html { render :edit }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -57,7 +58,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url }
+      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -70,6 +71,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :Email, :About, :Gender, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation, :about, :image)
     end
 end

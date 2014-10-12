@@ -1,14 +1,6 @@
-<h2>Here you can see everyone who has signed up </h2>
-<p>You could even send them an email saying 'Hi'!</p>
-<% @users.each do |user| %>
-	<ul>
-		<li><%= user.name %><br>
-		<%= user.Gender %><br>
-		<%= user.Email %><br>
-		<p>About <%= user.name %> : <%= user.About %><br>
-		</li>
-
-	</ul>
-<% end %>
-<%= link_to 'Back', users_path %>
-
+<h1 style="text-align:center; padding-top:75px; font-size: 100px">Welcome! </h1>
+<div style ="text-align: center;padding-top:80px;font-size:20px;">
+<p> Make your own profile and visit everyone else! </p>
+<p>Click <%= link_to "here", login_path %> to sign in. </p>
+<p> Click <%= link_to 'here', new_user_path %> to sign up. </p>
+</div> 

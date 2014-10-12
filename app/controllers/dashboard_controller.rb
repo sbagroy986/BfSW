@@ -1,5 +1,5 @@
 class DashboardController < ApplicationController
+skip_before_action :authorize
   def view
-  	@users = User.order(:name)
   end
 end

@@ -1,0 +1,33 @@
+<h4>Here is everyone who has signed up: </h4>
+<% @user.each do |user| %>
+		<div class="row">
+
+                    <div class="col-sm-8 col-lg-12 col-md-12">
+                        <div class="thumbnail">
+                            <p style="float:right;padding-right:200px;"><%= image_tag user.image, size: '350x150' %>
+                            <div class="caption">
+                                <div style="padding-left:150px;">
+                                <h4 style="font-size:"><%= user.name %>
+                                </h4>
+                                <p><%= user.about %></p>
+                            </div>
+                            <p style="padding-left:150px;"> Contact me at: <%= user.email %>. </p>
+                        </div>
+                            <div class="ratings">
+                                <div style="padding-left:150px;">
+                                
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+		</p>
+	
+</div>
+	<% end %>

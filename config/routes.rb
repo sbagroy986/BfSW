@@ -1,24 +1,28 @@
-BfSW::Application.routes.draw do
+Rails.application.routes.draw do
+
   resources :users
 
-  get 'admin' => 'admin#index'
+ 
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+ get 'dashboard' => 'dashboard#view', :as => :view_dashboard
+ get 'dash' => 'dash#view', :as => :view_dash
+
+  get 'dash' => 'dash#view'
   controller :sessions do
-    delete 'logout' => :destroy
     get  'login' => :new
     post 'login' => :create
+    delete 'logout' => :destroy
   end
 
-  get "sessions/create"
-  get "sessions/destroy"  
-  get "mchange/manage"
-  get "dashboard/view"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root :to => 'users#index'
-  get 'mchange' => 'mchange#manage', :as => :manage_mchange
-  get 'dashboard' => 'dashboard#view', :as => :view_dashboard
+  # root 'welcome#index'
+  root 'dashboard#view'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -54,7 +58,7 @@ BfSW::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

@@ -1,32 +1,26 @@
-<p id="notice"><%= notice %></p>
-<h2> Here are your details</h2>
 
-<p>
+<div style ="padding-left:150px;padding-top:50px;"><p>
   <strong>Name:</strong>
   <%= @user.name %>
 </p>
+<p style="float:right;padding-right:150px;">
+  <%= image_tag (@user.image), size: '400x500' %>
+</p>
 <p>
   <strong>Email:</strong>
-  <%= @user.Email %>
-</p>
-
-<p>
-  <strong>Gender:</strong>
-  <%= @user.Gender %>
+  <%= @user.email %> 
+  <p></p> <br>
 </p>
 
 <p>
   <strong>About:</strong>
-  <%= @user.About %>
+  <%= @user.about %>
+  <p></p> <br>
 </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @user.image_url %>
-</p>
-
-<p>If you would like to change some details,click <%= link_to 'here', edit_user_path(@user) %></p>
-<p>Click Click <%= link_to 'here', view_dashboard_path %> to visit everyone else.</p>
 
 
-
+<%= link_to 'Edit your details', edit_user_path(@user) %>
+<p></p> <br>
+<p style="font-size:20px;">Click <%= link_to 'here', view_dash_path %> to visit everyone else!</p>
+</div>

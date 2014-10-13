@@ -3,13 +3,13 @@
 one:
   name: MyString
   email: MyString
-  password_digest: <%= BCrypt::Password.create('secret') %>
   about: MyText
+  password_digest: <%= BCrypt::Password.create('secret') %>
   image: MyString
 
 two:
   name: MyString
   email: MyString
-  password_digest: <%= BCrypt::Password.create('secret') %>
   about: MyText
+  password_digest: <%= BCrypt::Password.create('secret') %>
   image: MyString

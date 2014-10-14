@@ -40,5 +40,9 @@
     <%= f.submit %>
   </div>
 <% end %>
+<% if session[:user_id] %>
+<%= link_to 'Back', @user %>
+<% else %>
 <%= link_to 'Back', view_dashboard_path %>
+<% end %>
 </div>

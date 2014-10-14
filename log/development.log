@@ -28666,3 +28666,709 @@ ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.ma
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 12:08:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#view as HTML
+  Rendered dashboard/view.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 97ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+Processing by DashboardController#view as HTML
+  Rendered dashboard/view.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:55 +0530
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-14 12:08:57 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LNpev1q2DcymPrBR9SSYHGzP8ImLh5HaOvzE5nPJqq0=", "name"=>"palash", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."name" = 'palash' LIMIT 1
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 74ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:08:59 +0530
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:09:01 +0530
+Processing by DashController#view as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered dash/view.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:17:37 +0530
+Processing by DashController#view as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered dash/view.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:38 +0530
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+Processing by DashController#view as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered dash/view.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:17:59 +0530
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:18:03 +0530
+Processing by DashController#view as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered dash/view.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:18:09 +0530
+Processing by DashController#view as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered dash/view.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:19:05 +0530
+Processing by DashController#view as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered dash/view.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LNpev1q2DcymPrBR9SSYHGzP8ImLh5HaOvzE5nPJqq0="}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+Processing by DashboardController#view as HTML
+  Rendered dashboard/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:51 +0530
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-14 12:19:53 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LNpev1q2DcymPrBR9SSYHGzP8ImLh5HaOvzE5nPJqq0=", "name"=>"palash", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."name" = 'palash' LIMIT 1
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 64ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:19:55 +0530
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:20:42 +0530
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:20:44 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered dash/view.html.erb within layouts/application (28.8ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    24: </div>
+    25: </div>
+    26: </div>
+    27: <a href = "localhost:3000/users/<%= @pser.id %>">Back</a>
+  app/views/dash/view.html.erb:27:in `_app_views_dash_view_html_erb___2391013189877235129_69919720793240'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.1ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:20:44 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered dash/view.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    24: </div>
+    25: </div>
+    26: </div>
+    27: <a href = "localhost:3000/users/<%= @pser.id %>">Back</a>
+  app/views/dash/view.html.erb:27:in `_app_views_dash_view_html_erb___2391013189877235129_23941760'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.0ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:22:10 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered dash/view.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:22:11 +0530
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:24:25 +0530
+
+SyntaxError (/home/shrey/Desktop/Programming/Rails/BfSW/app/controllers/dash_controller.rb:4: syntax error, unexpected ')', expecting ']'):
+  app/controllers/dash_controller.rb:4: syntax error, unexpected ')', expecting ']'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:25:17 +0530
+
+SyntaxError (/home/shrey/Desktop/Programming/Rails/BfSW/app/controllers/dash_controller.rb:5: syntax error, unexpected keyword_end, expecting ']'):
+  app/controllers/dash_controller.rb:5: syntax error, unexpected keyword_end, expecting ']'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:25:38 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ef0c96758>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:14 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 34ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x00000002a4d8a8>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:14 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x00000002dae830>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:15 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ef0b58148>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.4ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:15 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ee80e7130>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.5ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:15 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ee82506e8>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:16 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ee83ac168>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:16 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ee4053ce0>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (24.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.7ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:16 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x000000029b7088>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:16 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x00000002db9cd0>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:17 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ef0b598e0>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:17 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ee80e80a8>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:17 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `take' for #<ActiveRecord::QueryMethods::WhereChain:0x007f2ee8245680>):
+  app/controllers/dash_controller.rb:4:in `view'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE (2) LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered dash/view.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 55ms (Views: 25.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:25 +0530
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-10-14 12:27:29 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LNpev1q2DcymPrBR9SSYHGzP8ImLh5HaOvzE5nPJqq0="}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+Processing by DashboardController#view as HTML
+  Rendered dashboard/view.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 12:27:40 +0530

@@ -36,6 +36,14 @@
 	<% end %>
                     </li>
                     <li>
+                         <% if session[:user_id] %>
+                         <div style="float:right">
+                       <%= form_tag(users_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Users" %>
+  <%= submit_tag "Search", :name => nil %>
+</div>
+<% end %>
+<% end %>
                         
                     </li>
                 </ul>

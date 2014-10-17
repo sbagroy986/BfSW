@@ -35347,3 +35347,599 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-16 14:06:48 +0530
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-16 14:06:48 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+Processing by DashboardController#view as HTML
+  Rendered dashboard/view.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 65ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:02 +0530
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-16 14:38:06 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LNpev1q2DcymPrBR9SSYHGzP8ImLh5HaOvzE5nPJqq0=", "name"=>"Shrey", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."name" = 'Shrey' LIMIT 1
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 73ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:15 +0530
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-16 14:38:26 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/shrey/Desktop/Programming/Rails/BfSW/app/views/users/index.html.erb:30: syntax error, unexpected keyword_ensure, expecting $end):
+  app/views/users/index.html.erb:30: syntax error, unexpected keyword_ensure, expecting $end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.8ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-16 14:38:41 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+     7:     
+     8:     <div class="col-sm-4 col-lg-4 col-md-4">
+     9:         <div class="thumbnail">
+    10:             <%= image_tag @user.image%>
+    11:             <div class="caption">
+    12:             
+    13:                 <h4><a href="#"><%= @user.name %></a>
+  app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___774194707285903798_70127390565120'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (24.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.0ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-16 14:38:42 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+     7:     
+     8:     <div class="col-sm-4 col-lg-4 col-md-4">
+     9:         <div class="thumbnail">
+    10:             <%= image_tag @user.image%>
+    11:             <div class="caption">
+    12:             
+    13:                 <h4><a href="#"><%= @user.name %></a>
+  app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___774194707285903798_70127390565120'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.8ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-16 14:38:42 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `image' for nil:NilClass):
+     7:     
+     8:     <div class="col-sm-4 col-lg-4 col-md-4">
+     9:         <div class="thumbnail">
+    10:             <%= image_tag @user.image%>
+    11:             <div class="caption">
+    12:             
+    13:                 <h4><a href="#"><%= @user.name %></a>
+  app/views/users/index.html.erb:10:in `_app_views_users_index_html_erb___774194707285903798_70127390565120'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.9ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"  WHERE (name like '%Shrey%')  ORDER BY created_at DESC[0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-16 14:38:51 +0530
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-16 14:38:53 +0530
+Processing by DashController#view as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered dash/view.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 08:54:57 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#view as HTML
+  Rendered dashboard/view.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 291ms (Views: 255.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+Processing by DashboardController#view as HTML
+  Rendered dashboard/view.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:54:58 +0530
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LNpev1q2DcymPrBR9SSYHGzP8ImLh5HaOvzE5nPJqq0="}
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+Processing by DashboardController#view as HTML
+  Rendered dashboard/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:01 +0530
+
+
+Started GET "/login" for 127.0.0.1 at 2014-10-17 08:55:03 +0530
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 72ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-10-17 08:55:10 +0530
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LNpev1q2DcymPrBR9SSYHGzP8ImLh5HaOvzE5nPJqq0=", "name"=>"Shrey", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."name" = 'Shrey' LIMIT 1
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 203ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-10-17 08:55:10 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:11 +0530
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-17 08:55:19 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (50.6ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4:   
+    5: 
+    6:   <tbody>
+    7:     <% @users.each do |user| %>
+    8:     <div class="col-sm-4 col-lg-4 col-md-4">
+    9:         <div class="thumbnail">
+   10:             <%= image_tag user.image%>
+  app/views/users/index.html.erb:7:in `_app_views_users_index_html_erb__2712025527912415753_70312842839280'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"  WHERE (name like '%Shrey%')  ORDER BY created_at DESC
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:55:22 +0530
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-17 08:55:58 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered dash/view.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 60ms (Views: 52.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"  WHERE (name like '%Shrey%')  ORDER BY created_at DESC
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:03 +0530
+
+
+Started GET "/users?utf8=%E2%9C%93&search=lol" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"lol"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"  WHERE (name like '%lol%')  ORDER BY created_at DESC
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:07 +0530
+
+
+Started GET "/users?utf8=%E2%9C%93&search=hjj" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"hjj"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"  WHERE (name like '%hjj%')  ORDER BY created_at DESC
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 79ms (Views: 75.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:11 +0530
+
+
+Started GET "/users?utf8=%E2%9C%93&search=mcbc" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"mcbc"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"  WHERE (name like '%mcbc%')  ORDER BY created_at DESC
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:14 +0530
+
+
+Started GET "/users?utf8=%E2%9C%93&search=Shrey" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Shrey"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"  WHERE (name like '%Shrey%')  ORDER BY created_at DESC
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/assets/dash.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 08:56:21 +0530
+
+
+Started GET "/dash" for 127.0.0.1 at 2014-10-17 08:56:22 +0530
+Processing by DashController#view as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered dash/view.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.2ms)
